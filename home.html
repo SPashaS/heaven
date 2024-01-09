@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240110001208">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,9 +25,9 @@
 					<div class="header__column">
 						<a href="tel:+6281337970524" class="header__tel tel">+62 813-3797-0524</a>
 						<ul class="header__socials socials">
-							<li><a href="#" class="socials__link _icon-instagram"></a></li>
-							<li><a href="#" class="socials__link _icon-telegram"></a></li>
-							<li><a href="#" class="socials__link _icon-whatsapp"></a></li>
+							<li><a href="#" class="socials__link _icon-instagram" aria-label="instagram"></a></li>
+							<li><a href="#" class="socials__link _icon-telegram" aria-label="telegram"></a></li>
+							<li><a href="#" class="socials__link _icon-whatsapp" aria-label="whatsapp"></a></li>
 						</ul>
 					</div>
 					<button class="header__lang lang _icon-arr-bm">Рус</button>
@@ -43,7 +43,7 @@
 							Мы гармонично объединили европейский уровень сервиса, подход к безопасности и качеству с красотой
 							тропического острова
 						</p>
-						<button class="btn btn_arr">Записаться</button>
+						<button class="btn btn_arr" data-popup="#service1">Записаться</button>
 					</div>
 					<div class="promo__slider">
 						<div class="promo__swiper">
@@ -67,8 +67,8 @@
 							</div>
 						</div>
 						<div class="promo__slider-nav">
-							<button class="promo__btn-prev slider-btn slider-btn_prev"></button>
-							<button class="promo__btn-next slider-btn slider-btn_next"></button>
+							<button class="promo__btn-prev slider-btn slider-btn_prev" aria-label="Следующий слайд"></button>
+							<button class="promo__btn-next slider-btn slider-btn_next" aria-label="Предыдущий слайд"></button>
 						</div>
 					</div>
 				</div>
@@ -94,19 +94,19 @@
 						<ul class="desc__advantages advantages">
 							<li class="advantages__item">
 								<div class="advantages__item-image arc">
-									<img src="img/desc/1.svg" alt="Сервис">
+									<img src="img/desc/1.svg" alt="1">
 								</div>
 								<div class="advantages__item-title">Сервис</div>
 							</li>
 							<li class="advantages__item">
 								<div class="advantages__item-image arc">
-									<img src="img/desc/2.svg" alt="Пунктуальность">
+									<img src="img/desc/2.svg" alt="2">
 								</div>
 								<div class="advantages__item-title">Пунктуальность</div>
 							</li>
 							<li class="advantages__item">
 								<div class="advantages__item-image arc">
-									<img src="img/desc/3.svg" alt="Профессионализм">
+									<img src="img/desc/3.svg" alt="3">
 								</div>
 								<div class="advantages__item-title">Профессионализм</div>
 							</li>
@@ -146,8 +146,8 @@
 							</div>
 						</div>
 						<div class="examples__slider-nav">
-							<button class="examples__btn-prev slider-btn slider-btn_prev"></button>
-							<button class="examples__btn-next slider-btn slider-btn_next"></button>
+							<button class="examples__btn-prev slider-btn slider-btn_prev" aria-label="Предыдущий слайд"></button>
+							<button class="examples__btn-next slider-btn slider-btn_next" aria-label="Следующий слайд"></button>
 						</div>
 					</div>
 				</div>
@@ -165,10 +165,10 @@
 									<h3 class="item-services__title">МАНИКЮР</h3>
 									<button class="item-services__btn btn">Подробнее</button>
 								</div>
-								<div class="item-services__body-info">
+								<div class="item-services__body-info hidden">
 									<p class="item-services__info">Дизайн простой, ручная роспись (линии, геометрия) 1 ногость</p>
 									<span class="item-services__price">600 000</span>
-									<a href="#" class="item-services__btn btn">Записаться</a>
+									<button class="item-services__btn btn" data-popup="#service1">Записаться</button>
 								</div>
 							</div>
 						</li>
@@ -181,10 +181,10 @@
 									<h3 class="item-services__title">ПЕДИКЮР</h3>
 									<button class="item-services__btn btn">Подробнее</button>
 								</div>
-								<div class="item-services__body-info">
+								<div class="item-services__body-info hidden">
 									<p class="item-services__info">Дизайн простой, ручная роспись (линии, геометрия) 1 ногость</p>
 									<span class="item-services__price">600 000</span>
-									<a href="#" class="item-services__btn btn">Записаться</a>
+									<button class="item-services__btn btn" data-popup="#service2">Записаться</button>
 								</div>
 							</div>
 						</li>
@@ -197,10 +197,10 @@
 									<h3 class="item-services__title">РЕСНИЦЫ</h3>
 									<button class="item-services__btn btn">Подробнее</button>
 								</div>
-								<div class="item-services__body-info">
+								<div class="item-services__body-info hidden">
 									<p class="item-services__info">Дизайн простой, ручная роспись (линии, геометрия) 1 ногость</p>
 									<span class="item-services__price">600 000</span>
-									<a href="#" class="item-services__btn btn">Записаться</a>
+									<button class="item-services__btn btn" data-popup="#service3">Записаться</button>
 								</div>
 							</div>
 						</li>
@@ -213,10 +213,10 @@
 									<h3 class="item-services__title">НАРАЩИВАНИЕ РЕСНИЦ</h3>
 									<button class="item-services__btn btn">Подробнее</button>
 								</div>
-								<div class="item-services__body-info">
+								<div class="item-services__body-info hidden">
 									<p class="item-services__info">Дизайн простой, ручная роспись (линии, геометрия) 1 ногость</p>
 									<span class="item-services__price">600 000</span>
-									<a href="#" class="item-services__btn btn">Записаться</a>
+									<button class="item-services__btn btn" data-popup="#service4">Записаться</button>
 								</div>
 							</div>
 						</li>
@@ -229,10 +229,10 @@
 									<h3 class="item-services__title">БРОВИ</h3>
 									<button class="item-services__btn btn">Подробнее</button>
 								</div>
-								<div class="item-services__body-info">
+								<div class="item-services__body-info hidden">
 									<p class="item-services__info">Дизайн простой, ручная роспись (линии, геометрия) 1 ногость</p>
 									<span class="item-services__price">600 000</span>
-									<a href="#" class="item-services__btn btn">Записаться</a>
+									<button class="item-services__btn btn" data-popup="#service5">Записаться</button>
 								</div>
 							</div>
 						</li>
@@ -245,10 +245,10 @@
 									<h3 class="item-services__title">ДЕПИЛЯЦИЯ ( ВОСК/ШУГАРИНГ)</h3>
 									<button class="item-services__btn btn">Подробнее</button>
 								</div>
-								<div class="item-services__body-info">
+								<div class="item-services__body-info hidden">
 									<p class="item-services__info">Дизайн простой, ручная роспись (линии, геометрия) 1 ногость</p>
 									<span class="item-services__price">600 000</span>
-									<a href="#" class="item-services__btn btn">Записаться</a>
+									<button class="item-services__btn btn" data-popup="#service6">Записаться</button>
 								</div>
 							</div>
 						</li>
@@ -261,10 +261,10 @@
 									<h3 class="item-services__title">ОКРАШИВАНИЕ ВОЛОС</h3>
 									<button class="item-services__btn btn">Подробнее</button>
 								</div>
-								<div class="item-services__body-info">
+								<div class="item-services__body-info hidden">
 									<p class="item-services__info">Дизайн простой, ручная роспись (линии, геометрия) 1 ногость</p>
 									<span class="item-services__price">600 000</span>
-									<a href="#" class="item-services__btn btn">Записаться</a>
+									<button class="item-services__btn btn" data-popup="#service7">Записаться</button>
 								</div>
 							</div>
 						</li>
@@ -277,10 +277,10 @@
 									<h3 class="item-services__title">ДОПОЛНИТЕЛЬНЫЙ СЕРВИС</h3>
 									<button class="item-services__btn btn">Подробнее</button>
 								</div>
-								<div class="item-services__body-info">
+								<div class="item-services__body-info hidden">
 									<p class="item-services__info">Дизайн простой, ручная роспись (линии, геометрия) 1 ногость</p>
 									<span class="item-services__price">600 000</span>
-									<a href="#" class="item-services__btn btn">Записаться</a>
+									<button class="item-services__btn btn" data-popup="#service8">Записаться</button>
 								</div>
 							</div>
 						</li>
@@ -326,7 +326,7 @@
 						</ul>
 					</div>
 					<div class="contacts__map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15777.13559506212!2d115.13751726711676!3d-8.66452754923989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2388763a6c315%3A0x4f0280956d61b45!2zSmwuIFN1YmFrIFNhcmksIFRpYnViZW5lbmcsIEtlYy4gS3V0YSBVdGFyYSwgS2FidXBhdGVuIEJhZHVuZywgQmFsaSwg0JjQvdC00L7QvdC10LfQuNGP!5e0!3m2!1sru!2sby!4v1704793046125!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15777.13559506212!2d115.13751726711676!3d-8.66452754923989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2388763a6c315%3A0x4f0280956d61b45!2zSmwuIFN1YmFrIFNhcmksIFRpYnViZW5lbmcsIEtlYy4gS3V0YSBVdGFyYSwgS2FidXBhdGVuIEJhZHVuZywgQmFsaSwg0JjQvdC00L7QvdC10LfQuNGP!5e0!3m2!1sru!2sby!4v1704793046125!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта"></iframe>
 					</div>
 				</div>
 			</section>
@@ -340,9 +340,9 @@
 					<div class="footer__main">
 						<a href="tel:+6281337970524" class="footer__tel tel">+62 813-3797-0524</a>
 						<ul class="footer__socials socials">
-							<li><a href="#" class="socials__link _icon-instagram"></a></li>
-							<li><a href="#" class="socials__link _icon-telegram"></a></li>
-							<li><a href="#" class="socials__link _icon-whatsapp"></a></li>
+							<li><a href="#" class="socials__link _icon-instagram" aria-label="instagram"></a></li>
+							<li><a href="#" class="socials__link _icon-telegram" aria-label="telegram"></a></li>
+							<li><a href="#" class="socials__link _icon-whatsapp" aria-label="whatsapp"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -353,86 +353,649 @@
 		</footer>
 
 	</div>
-	<div id="order-call" aria-hidden="true" class="popup">
+	<div id="service1" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__header">
+					<div class="popup__title">Маникюр</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
 				<div class="popup__text">
-					<div class="order-call">
-						<form action="#" class="order-call__form form form_service" data-dev>
-							<div class="form__row">
-								<label class="form__label" for="form-your-name">как вас зовут</label>
-								<div class="form__input">
-									<input id="form-your-name" autocomplete="off" type="text" name="name" placeholder="Введите ваше имя" data-required>
+					<div class="popup-price">
+						<div class="popup-price__table table-price">
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
 								</div>
 							</div>
-							<div class="form__row">
-								<label class="form__label" for="form-your-phone">введите ваш номер телефона</label>
-								<div class="form__input">
-									<input id="form-your-phone" autocomplete="off" type="text" name="number" placeholder="+7 (999) 999-99-99" data-required>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
 								</div>
 							</div>
-
-							<div class="form__row">
-								<label class="form__label" for="form-your-text">Кратко пишите какая услуга вас интерисует</label>
-								<div class="form__input">
-									<input id="form-your-text" autocomplete="off" type="text" name="service" placeholder="Например: отключение контроля катализатора" data-required>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
 								</div>
 							</div>
-
-							<div class="form__row">
-								<div class="form__label form__label_center">Выберите удобный вид связи</div>
-								<div class="form__select">
-									<div class="form__select-item">
-										<input id="type-contacts-phone" type="radio" name="type-contacts" value="Телефон" checked>
-										<label for="type-contacts-phone">
-											<span class="_icon-telephone"></span>
-											<span>Телефон</span>
-										</label>
-									</div>
-
-									<div class="form__select-item">
-										<input id="type-contacts-whatsapp" type="radio" name="type-contacts" value="Whatsapp">
-										<label for="type-contacts-whatsapp">
-											<span class="_icon-whatsapp"></span>
-											<span>WhatsApp</span>
-										</label>
-									</div>
-
-									<div class="form__select-item">
-										<input id="type-contacts-telegram" type="radio" name="type-contacts" value="Telegram">
-										<label for="type-contacts-telegram">
-											<span class="_icon-telegram"></span>
-											<span>@Rebelkz</span>
-										</label>
-									</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
 								</div>
 							</div>
-
-							<div class="form__submit">
-								<button class="button" type="submit">Выберите удобный вид связи</button>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
 							</div>
-
-						</form>
-						<p class="order-call__politics-user">
-							Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с Политикой конфиденциальности.
-						</p>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240109195327"></script>
-	<!-- <script>
-window.addEventListener("load", function (e) {
-  const filter = document.querySelector('#filter');
-  window.scrollTo({
-  top: filter.getBoundingClientRect().top - 15,
-  left: 0,
-  behavior: "instant"
-  });
-})
-</script> -->
+
+	<div id="service2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">Педикюр</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__text">
+					<div class="popup-price">
+						<div class="popup-price__table table-price">
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="service3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">РЕСНИЦЫ</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__text">
+					<div class="popup-price">
+						<div class="popup-price__table table-price">
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="service4" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">НАРАЩИВАНИЕ РЕСНИЦ</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__text">
+					<div class="popup-price">
+						<div class="popup-price__table table-price">
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="service5" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">БРОВИ</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__text">
+					<div class="popup-price">
+						<div class="popup-price__table table-price">
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="service6" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">ДЕПИЛЯЦИЯ ( ВОСК/ШУГАРИНГ)</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__text">
+					<div class="popup-price">
+						<div class="popup-price__table table-price">
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="service7" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">ОКРАШИВАНИЕ ВОЛОС</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__text">
+					<div class="popup-price">
+						<div class="popup-price__table table-price">
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="service8" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">ДОПОЛНИТЕЛЬНЫЙ СЕРВИС</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__text">
+					<div class="popup-price">
+						<div class="popup-price__table table-price">
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+							<div class="table-price__row">
+								<div class="table-price__title">Маникюр комбинированный без покрытия</div>
+								<div class="table-price__column">
+									<span class="table-price__price">250 000</span>
+									<a href="#" class="table-price__btn btn">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/app.min.js?_v=20240110001208"></script>
 </body>
 
 </html>
