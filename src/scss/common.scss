@@ -1,0 +1,106 @@
+// Заголовки, общие БЄМ блоки и проче...
+.title {
+  text-align: center;
+  font-family: Cormorant;
+  font-size: 3.4rem;
+  line-height: 1.12;
+  font-weight: 400;
+
+  @media (min-width:$mobile){
+    font-size: 6.5rem;
+  }
+}
+.circle,
+.line  {
+  position: relative;
+
+  &::before {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.circle {
+  &::before {
+    transform: translate(-55%,-50%);
+    width: 139%;
+    aspect-ratio: 35 / 9;
+    background-image: url("@img/decor/circle.svg");
+    top: 50%;
+  }
+}
+.line {
+  &::before {
+    transform: translateX(-50%);
+    width: 139%;
+    aspect-ratio: 31 / 2;
+    background-image: url("@img/decor/line.svg");
+    bottom: -8px;
+  }
+}
+
+.arc {
+  border-radius: 250px 250px 0px 0px;
+  overflow: hidden;
+}
+
+.tel {
+  line-height: normal;
+  font-weight: 400;
+
+  @media (min-width:$mobile){
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+}
+
+.socials {
+	display: flex;
+	gap: 3px;
+
+	@media (min-width:$mobile){
+		gap: 20px; 
+	}
+	// .socials__link
+	&__link {
+		color: var(--accent-color);
+		&::before {
+			font-size: 25.9px;
+		}
+
+		@media (min-width: 600px){
+			&::before {
+				font-size: 35.2px;
+			}
+		}
+	}
+}
+
+.slider-btn {
+	&::after {
+		@extend %ic;
+    font-size: 24px;
+
+    @media (min-width:$mobile){
+      font-size: 52px; 
+    }
+	}
+  // .slider-btn_prev
+  &_prev {
+    &::after {
+      content: "\e90a";
+    }
+  }
+
+  // .slider-btn_next
+  &_next {
+    &::after {
+		  content: "\e909";
+    }
+  }
+}

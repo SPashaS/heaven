@@ -1,0 +1,57 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.btn {
+	background-color: #fff;
+	color: #956469;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: all 0.3s ease 0s;
+
+	min-height: 47px;
+	border-radius: 81px;
+	padding: 10px 20px;
+	gap: 10px;
+	font-weight: 600;
+
+	border: 1px solid #956469;
+
+	&_arr {
+		
+		border: 1px solid #fff;
+		&::after {
+			@extend %ic;
+			content: "\e908";
+			font-size: 1.6rem;
+		}
+
+		@media (min-width:$mobile){
+			gap: 34px;
+			font-size: 2.4rem;
+			padding: 10px 43px 10px 64px;
+			min-height: 66px;
+		}
+	}
+
+
+
+	//ios
+	-webkit-appearance: none;
+  -webkit-border-radius: 81px;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--btn-color-hover);
+			color: rgb(248, 249, 198);
+		}
+	}
+
+	&:active {
+		background-color: var(--btn-color-hover);
+    color: rgb(248, 249, 198);
+	}
+
+}
