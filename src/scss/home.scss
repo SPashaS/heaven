@@ -40,7 +40,7 @@
       display: block;
       width: percent(125,375);
       aspect-ratio: 335 / 167;
-      background-color: #CB8790;
+      background-color: var(light-accent-color);
       border-radius: 200px 200px 0 0;
       position: absolute;
       right: 0;
@@ -61,7 +61,7 @@
       display: block;
       width: percent(125,375);
       aspect-ratio: 335 / 167;
-      background-color: #CB8790;
+      background-color: var(light-accent-color);
       border-radius: 200px 200px 0 0;
       position: absolute;
       left: 0;
@@ -161,6 +161,7 @@
   // .promo__swiper
 
   &__swiper {
+    display: flex;
     margin-bottom: 8px;
 
     @media (min-width:$mobile){
@@ -226,7 +227,7 @@
 
     @media (min-width:$pc){
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 853px;
       position: relative;
 
       &::before {
@@ -234,7 +235,7 @@
         display: block;
         width: percent(125,375);
         aspect-ratio: 335 / 167;
-        background-color: #CB8790;
+        background-color: var(light-accent-color);
         border-radius: 200px 200px 0 0;
         position: absolute;
         z-index: 2;
@@ -477,6 +478,7 @@
 
   &__swiper {
     margin-bottom: 14px;
+    display: flex;
   }
 
   // .examples__slide
@@ -564,7 +566,7 @@
     margin: 0 -6px;
 
     display: grid;
-    gap: 57px;
+    gap: 57px 10px;
     grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
 
     @media (min-width:$mobile){
@@ -575,6 +577,10 @@
 
     @media (min-width:$pc){
       grid-template-columns: repeat(3,1fr);
+
+    }
+
+    @media (min-width: 1500px){
       padding: 0 42px;
       gap: 77px 94px;
     }
@@ -604,6 +610,11 @@
     @media (min-width:$pc){
       padding: 35px 15px;
       margin-top: -85px;
+      min-height: 200px;
+    }
+
+    .hidden {
+      display: none;
     }
   }
 
@@ -631,16 +642,35 @@
   // .item-services__body-info
 
   &__body-info {
-    display: none;
+    display: grid;
+    justify-items: center;
+    gap: 10px;
   }
 
   // .item-services__info
 
-  &__info {}
+  &__info {
+    line-height: 1.26517;
+
+    @media (min-width:$pc){
+      font-size: 2rem; 
+    }
+  }
 
   // .item-services__price
 
-  &__price {}
+  &__price {
+    color: var(--main-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    &::after {
+      content:' р';
+    }
+
+    @media (min-width:$pc){
+      font-size: 1.4rem;
+    }
+  }
 }
 
 //====================================================================================================
@@ -808,7 +838,7 @@
         display: block;
         width: percent(125,375);
         aspect-ratio: 335 / 167;
-        background-color: #CB8790;
+        background-color: var(light-accent-color);
         border-radius: 200px 200px 0 0;
         position: absolute;
         z-index: 2;
@@ -819,6 +849,15 @@
       }
     }
   }
+
+  a {
+		transition: all 0.3s ease 0s;
+		@media (hover: hover) {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
 
   // .contacts__body
 

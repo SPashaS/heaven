@@ -1,6 +1,7 @@
 body::after {
 	content: "";
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.53);
+	backdrop-filter: blur(4.900000095367432px);
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -25,8 +26,8 @@ body.popup-show::after {
 	visibility: hidden;
 	pointer-events: none;
 
-	@media (min-width:$mobileSmall){
-		padding: 30px 10px;
+	@media (min-width:$mobile){
+		padding: 45px;
 	}
 }
 .popup_show {
@@ -51,17 +52,28 @@ body.popup-show::after {
 	align-items: center;
 }
 .popup__content {
+	font-family: Cormorant;
+
+
 	visibility: hidden;
   transform: scale(0);
   transition: transform 0.3s ease 0s;
-  background-color: var(--accent-color);
-  padding: 35px 15px;
+  background-color: #fff;
   width: 100%;
-  max-width: 700px;
-  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
+	max-width: 680px;
+	color: #29261D;
+
+	border-radius: 8px;
+	padding: 20px 15px;
 
 	@media (min-width:$mobile){
-		padding: 52px 58px 34px;
+		padding: 26px 20px;
+
+	}
+
+	@media (min-width:$pc){
+		padding: 20px;
+		max-width: 946px; 
 	}
 
 	.lock & {
@@ -69,196 +81,104 @@ body.popup-show::after {
 	}
 }
 
-.popup__close {
-	position: absolute;
-	right: 15px;
-	top: 10px;
-	@media (min-width:$mobileSmall){
-		right: 33px;
-		top: 32px;
+.popup__header {
+	display: flex;
+	justify-content: space-between;
+	padding: 6px 0;
+}
+
+.popup__title {
+	font-size: 1.8rem;
+
+	@media (min-width:$mobile){
+		font-size: 3.4rem; 
 	}
+}
 
-
+.popup__close {
 	&::before {
 		font-size: 25px;
 	}
 }
 
 
+.popup-price {
 
-.order-call {
-  display: grid;
-  justify-items: center;
-  font-family: Montserrat;
-  font-size: 1.8rem;
-  color: var(--light-color-text);
+	// .popup-price__title
 
-	// // .order-call__title
-	// &__title {
-	// 	margin-bottom: 90px;
-	// 	// font-family: Montserrat;
-	// 	font-size: 2rem;
-	// }
 
-	// .order-call__form
-	&__form {
-		min-width: 100%;
-		margin-bottom: 20px;
-	}
 
-	// .order-call__politics-user
-	&__politics-user {
-		text-align: center;
-		font-weight: 300;
-	}
+	// .popup-price__table
 
-	// .order-call__thanks
-
-	&__thanks {
-		display: grid;
-		justify-items: center;
-		gap: 48px;
-	}
-
-	// .order-call__thanks-title
-
-	&__thanks-title {
-	}
-
-	// .order-call__thanks-text
-
-	&__thanks-text {
-		text-align: center;
-	}
-
+	&__table {}
 }
 
 
-.form {
-	display: grid;
-	gap: 20px;
+.table-price {
 
-	&_service {
-		.form__submit {
-			input {
-				min-width: 160px;
-			}
-		}
-	}
-
-	// .form__row
+	// .table-price__row
 	&__row {
-		padding: 10px;
-		display: grid;
-		gap: 20px;
-		border: 1px solid transparent;
-		&._form-error {
-			border: 1px solid red;
-		}
-	}
-
-	&__label {
-		font-size: 1.4rem;
-		text-transform: uppercase;
-		color: var(--light-color-text);
-
-		// .form__label_center
-		&_center {
-			text-align: center;
-		}
-	}
-
-	// .form__input
-	&__input {
-		height: 42px;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-		position: relative;
-		
-		input {
-			background-color: transparent;
-			outline: none;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 22px;
-			color: #ffffff;
-
-			&::placeholder {
-				color: hsla(0, 0%, 100%, 0.5);
-				line-height: 1.375;
-			}
-		}
-
-
-	}
-
-		// .form__select
-		&__select {
-			display: flex;
-			justify-content: center;
-			gap: 10px;
-			margin: 0 -13px;
-			
-			@media (min-width:$mobileSmall){
-				margin: 0;
-				gap: 30px; 
-			}
-			@media (min-width:$mobile){
-				gap: 60px; 
-			}
-		}
-
-		// .form__select-item
-		&__select-item {
-			border-radius: 5px;
-			background: #FFF;
-			box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.25);
-			color: var(--main-color-text);
-			position: relative;
-			min-width: 93px;
-			cursor: pointer;
-
-			label {
-				display: grid;
-				justify-items: center;
-				gap: 10px;
-				padding: 9px 4px;
-
-				span::before {
-					color: var(--accent-color);
-					font-size: 24px;
-				}
-			}
-
-			input {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				opacity: 0;
-			}
-
-			input:checked ~ label::before {
-				@extend %ic;
-				content: "\e902";
-				width: 28px;
-				height: 28px;
-				background: #3771C8;
-				border-radius: 50%;
-				position: absolute;
-				top: -14px;
-				right: -14px;
-				font-size: 28px;
-				color: var(--light-color-text);
-				box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.25);
-			}
-		}
-
-	// .form__submit
-	&__submit {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+		padding: 8px 0;
+	}
+
+	// .table-price__title
+
+	&__title {
+		font-size: 1.2rem;
+		font-weight: 400;
+		line-height: 1.12;
+
+		@media (min-width:$mobile){
+			font-size: 1.8rem; 
+		}
+
+		@media (min-width:$pc){
+			font-size: 2.6rem; 
+		}
+	}
+
+	// .table-price__column
+
+	&__column {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+
+		@media (min-width:$mobile){
+			gap: 10px; 
+		}
+	}
+
+	// .table-price__price
+
+	&__price {
+		font-size: 1.8rem;
+		font-weight: 600;
+		white-space: nowrap;
+
+		@media (min-width:$pc){
+			 font-size: 3.4rem; 
+		}
+	}
+
+	// .table-price__btn
+
+	&__btn {
+		padding: 7px 11px;
+		font-family: Montserrat;
+		font-size: 1rem;
+		min-height: 31px;
+
+		@media (min-width:$mobile){
+			 font-size: 1.2rem; 
+		}
+
+		@media (min-width:$pc){
+			 font-size: 1.6rem; 
+		}
 	}
 }

@@ -15,6 +15,7 @@
 	}
 }
 
+
 ._icon-instagram:before {
   content: "\e900";
 }
@@ -26,19 +27,15 @@
 }
 ._icon-mail:before {
   content: "\e903";
-	font-size: 15px;
 }
 ._icon-maps:before {
   content: "\e904";
-	font-size: 23px;
 }
 ._icon-phone:before {
   content: "\e905";
-	font-size: 21px;
 }
 ._icon-time:before {
   content: "\e906";
-	font-size: 21px;
 }
 ._icon-arr-bm:before {
   content: "\e907";
@@ -51,4 +48,7 @@
 }
 ._icon-arr-prev:before {
   content: "\e90a";
+}
+._icon-close:before {
+  content: "\e90b";
 }

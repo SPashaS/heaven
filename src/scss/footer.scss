@@ -9,6 +9,15 @@
   // .footer__container
   &__container {}
 
+  a {
+		transition: all 0.3s ease 0s;
+		@media (hover: hover) {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+
   // .footer__top
 
   &__top {

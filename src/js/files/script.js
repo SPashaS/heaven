@@ -26,3 +26,27 @@ import { flsModules } from "./modules.js";
 //     submenuOpen.classList.remove('submenu-open');
 //   }
 // }
+
+
+// const itemsBody = document.querySelectorAll('.item-services__body');
+
+// if (itemsBody) {
+//   itemsBody.forEach(el => {
+//     const btn = el.querySelector('.item-services__body-promo .item-services__btn');
+//     btn.addEventListener('click', () => {
+//       el.querySelector('.item-services__body-promo').classList.add('hidden');
+//       el.querySelector('.item-services__body-info').classList.remove('hidden');
+//     })
+//   });
+// }
+
+
+const lang = document.querySelector('.lang');
+if(lang) {
+  lang.querySelector('.lang__btn').addEventListener('click', () => {
+    lang.classList.toggle('lang_open');
+  })
+}
+
+
+

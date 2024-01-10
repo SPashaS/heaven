@@ -82,6 +82,13 @@
 }
 
 .slider-btn {
+  transition: all 0.3s ease 0s;
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  
 	&::after {
 		@extend %ic;
     font-size: 24px;
