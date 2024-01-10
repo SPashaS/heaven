@@ -479,6 +479,7 @@ body.popup-show::after {
 [class*=-ibg] {
   position: relative;
 }
+[class*=-ibg] picture,
 [class*=-ibg] img {
   position: absolute;
   width: 100%;
@@ -488,6 +489,7 @@ body.popup-show::after {
   object-fit: cover;
 }
 
+[class*=-ibg_contain] picture,
 [class*=-ibg_contain] img {
   object-fit: contain;
 }
