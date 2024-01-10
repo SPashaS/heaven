@@ -40,7 +40,7 @@
       display: block;
       width: percent(125,375);
       aspect-ratio: 335 / 167;
-      background-color: var(light-accent-color);
+      background-color: var(--light-accent-color);
       border-radius: 200px 200px 0 0;
       position: absolute;
       right: 0;
@@ -61,7 +61,7 @@
       display: block;
       width: percent(125,375);
       aspect-ratio: 335 / 167;
-      background-color: var(light-accent-color);
+      background-color: var(--light-accent-color);
       border-radius: 200px 200px 0 0;
       position: absolute;
       left: 0;
@@ -235,7 +235,7 @@
         display: block;
         width: percent(125,375);
         aspect-ratio: 335 / 167;
-        background-color: var(light-accent-color);
+        background-color: var(--light-accent-color);
         border-radius: 200px 200px 0 0;
         position: absolute;
         z-index: 2;
@@ -838,7 +838,7 @@
         display: block;
         width: percent(125,375);
         aspect-ratio: 335 / 167;
-        background-color: var(light-accent-color);
+        background-color: var(--light-accent-color);
         border-radius: 200px 200px 0 0;
         position: absolute;
         z-index: 2;

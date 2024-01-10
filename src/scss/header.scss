@@ -149,6 +149,9 @@
 		width: 100%;
 		opacity: 0;
 		pointer-events: none;
+		padding-top: 5px;
+		display: grid;
+		gap: 5px;
 		transform: translateY(-15px);
 
 		transition: all 0.3s ease 0s;
